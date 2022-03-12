@@ -55,9 +55,41 @@ export default {
         },
       ],
       periodoSelecionado: null,
+      salas: [
+        {
+          id: 1,
+          nome: "Sala 1",
+          alocacoes: [
+            {
+              id:1,
+              data: new Date(2022,02,14),
+              periodo: {
+                id: 1, 
+                nome: 'Manhã'
+              }
+            },
+            {
+              id:2,
+              data: new Date(2022,02,17),
+              periodo: {
+                id: 1, 
+                nome: 'Manhã'
+              }
+            }
+          ]
+        },
+        {
+          id: 2,
+          nome: "Sala 2",
+        },
+        {
+          id: 3,
+          nome: "Sala 3",
+        },
+      ],
     };
   },
-  //usaria o methods de abaixo @click.prevent="selecionarPredio(predio)" se o click for desse jeito
+  //o methods de abaixo usaria -> @click.prevent="selecionarPredio(predio)" <- no click se o click for desse jeito
   // methods: {
   //   selecionarPredio(predio) {
   //     this.predioSelecionado = predio;
